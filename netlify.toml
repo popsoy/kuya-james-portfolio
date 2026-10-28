@@ -1,0 +1,928 @@
+[functions]
+
+  [functions._ipx]
+  node_bundler = "nft"
+
+  [functions.___netlify-handler]
+  included_files = [
+    ".env",
+    ".env.local",
+    ".env.production",
+    ".env.production.local",
+    "./public/locales/**",
+    "./next-i18next.config.js",
+    ".next/server/**",
+    ".next/serverless/**",
+    ".next/*.json",
+    ".next/BUILD_ID",
+    ".next/static/chunks/webpack-middleware*.js",
+    "!.next/server/**/*.js.nft.json",
+    "!.next/server/**/*.map",
+    "!**/node_modules/@next/swc*/**/*",
+    "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+    "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/compiled/webpack/bundle4.js",
+    "!node_modules/next/dist/compiled/webpack/bundle5.js",
+    "node_modules/styled-jsx/style.js"
+  ]
+  external_node_modules = []
+  node_bundler = "nft"
+
+  [functions.___netlify-odb-handler]
+  included_files = [
+    ".env",
+    ".env.local",
+    ".env.production",
+    ".env.production.local",
+    "./public/locales/**",
+    "./next-i18next.config.js",
+    ".next/server/**",
+    ".next/serverless/**",
+    ".next/*.json",
+    ".next/BUILD_ID",
+    ".next/static/chunks/webpack-middleware*.js",
+    "!.next/server/**/*.js.nft.json",
+    "!.next/server/**/*.map",
+    "!**/node_modules/@next/swc*/**/*",
+    "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+    "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/compiled/webpack/bundle4.js",
+    "!node_modules/next/dist/compiled/webpack/bundle5.js",
+    "node_modules/styled-jsx/style.js"
+  ]
+  external_node_modules = []
+  node_bundler = "nft"
+
+  [functions."_api_*"]
+  included_files = [
+    ".env",
+    ".env.local",
+    ".env.production",
+    ".env.production.local",
+    "./public/locales/**",
+    "./next-i18next.config.js",
+    ".next/server/**",
+    ".next/serverless/**",
+    ".next/*.json",
+    ".next/BUILD_ID",
+    ".next/static/chunks/webpack-middleware*.js",
+    "!.next/server/**/*.js.nft.json",
+    "!.next/server/**/*.map",
+    "!**/node_modules/@next/swc*/**/*",
+    "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+    "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+    "!node_modules/next/dist/compiled/webpack/bundle4.js",
+    "!node_modules/next/dist/compiled/webpack/bundle5.js",
+    "node_modules/styled-jsx/style.js"
+  ]
+  external_node_modules = []
+  node_bundler = "nft"
+
+[build]
+
+  [build.environment]
+  NEXT_PRIVATE_TARGET = "server"
+
+[[redirects]]
+from = "/_next/static/*"
+to = "/static/:splat"
+status = 200
+
+[[redirects]]
+from = "/_next/image*"
+to = "/_ipx/w_:width,q_:quality/:url"
+status = 301
+
+  [redirects.query]
+  url = ":url"
+  w = ":width"
+  q = ":quality"
+
+[[redirects]]
+from = "/_ipx/*"
+to = "/.netlify/builders/_ipx"
+status = 200
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/CV-James Ryan Pepito.pdf"
+to = "/CV-James Ryan Pepito.pdf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/favicon.ico"
+to = "/favicon.ico"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/Cascadia.ttf"
+to = "/fonts/Cascadia.ttf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/Circular-Bold.otf"
+to = "/fonts/Circular-Bold.otf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/Circular-Book.otf"
+to = "/fonts/Circular-Book.otf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/Circular-Light.otf"
+to = "/fonts/Circular-Light.otf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/Circular-Medium.otf"
+to = "/fonts/Circular-Medium.otf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/fonts/CircularStd-Black.otf"
+to = "/fonts/CircularStd-Black.otf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/Front End Developer.pdf"
+to = "/images/Front End Developer.pdf"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/aaron.jpg"
+to = "/images/aaron.jpg"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/aaron.png"
+to = "/images/aaron.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/adam.png"
+to = "/images/adam.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/background.png"
+to = "/images/background.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/card-bg.jpg"
+to = "/images/card-bg.jpg"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/emoji.png"
+to = "/images/emoji.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/hassan.png"
+to = "/images/hassan.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/james-profile-pic.png"
+to = "/images/james-profile-pic.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/james-profile.png"
+to = "/images/james-profile.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/jhimson.png"
+to = "/images/jhimson.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/noel.jpg"
+to = "/images/noel.jpg"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/noel.png"
+to = "/images/noel.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/rank-silver.png"
+to = "/images/rank-silver.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/5-15globalenergy.png"
+to = "/projects/5-15globalenergy.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/absco.png"
+to = "/projects/absco.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/alsn.png"
+to = "/projects/alsn.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/bebrightgermanshepherds.png"
+to = "/projects/bebrightgermanshepherds.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/brightmarketer-org.png"
+to = "/projects/brightmarketer-org.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/creatingcrowds.png"
+to = "/projects/creatingcrowds.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/culyte.png"
+to = "/projects/culyte.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/erp.png"
+to = "/projects/erp.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/exertusfp.png"
+to = "/projects/exertusfp.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/fateh.png"
+to = "/projects/fateh.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/ffl.png"
+to = "/projects/ffl.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/firmsanad.png"
+to = "/projects/firmsanad.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/harborsolar.png"
+to = "/projects/harborsolar.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/james-stewardship.png"
+to = "/projects/james-stewardship.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/james-techcorp.png"
+to = "/projects/james-techcorp.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/jmm.png"
+to = "/projects/jmm.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/mojoestates.png"
+to = "/projects/mojoestates.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/onemoretimeibiza.png"
+to = "/projects/onemoretimeibiza.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/otawix.png"
+to = "/projects/otawix.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/rosecgi.png"
+to = "/projects/rosecgi.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/rubyribbon.png"
+to = "/projects/rubyribbon.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/spatay.png"
+to = "/projects/spatay.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/suladio.png"
+to = "/projects/suladio.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/tojjar.png"
+to = "/projects/tojjar.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/vidacious.png"
+to = "/projects/vidacious.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/projects/zulumedia.png"
+to = "/projects/zulumedia.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/readme-images/moj.png"
+to = "/readme-images/moj.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/readme-images/portfolio.png"
+to = "/readme-images/portfolio.png"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/images/svgs/fiverr.svg"
+to = "/images/svgs/fiverr.svg"
+status = 200
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+force = true
+
+  [redirects.conditions]
+  Cookie = [
+    "__prerender_bypass",
+    "__next_preview_data"
+  ]
+
+[[redirects]]
+from = "/_next/data/fb7ZqJ_4B0zr80HXV-jV5/index.json"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/_next/data/fb7ZqJ_4B0zr80HXV-jV5/background.json"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/background"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/_next/data/fb7ZqJ_4B0zr80HXV-jV5/contact.json"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/contact"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/_next/data/fb7ZqJ_4B0zr80HXV-jV5/layout.json"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/layout"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/_next/data/fb7ZqJ_4B0zr80HXV-jV5/portfolio.json"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/portfolio"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/functions/___netlify-handler"
+status = 200
+
+[context]
+
+  [context.production]
+
+    [context.production.environment]
+    NEXT_PRIVATE_TARGET = "server"
+
+    [context.production.functions]
+
+      [context.production.functions._ipx]
+      node_bundler = "nft"
+
+      [context.production.functions.___netlify-handler]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+      [context.production.functions.___netlify-odb-handler]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+      [context.production.functions."_api_*"]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+    [context.production.build]
+
+      [context.production.build.environment]
+      NEXT_PRIVATE_TARGET = "server"
+
+  [context.main]
+
+    [context.main.environment]
+    NEXT_PRIVATE_TARGET = "server"
+
+    [context.main.functions]
+
+      [context.main.functions._ipx]
+      node_bundler = "nft"
+
+      [context.main.functions.___netlify-handler]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+      [context.main.functions.___netlify-odb-handler]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+      [context.main.functions."_api_*"]
+      included_files = [
+        ".env",
+        ".env.local",
+        ".env.production",
+        ".env.production.local",
+        "./public/locales/**",
+        "./next-i18next.config.js",
+        ".next/server/**",
+        ".next/serverless/**",
+        ".next/*.json",
+        ".next/BUILD_ID",
+        ".next/static/chunks/webpack-middleware*.js",
+        "!.next/server/**/*.js.nft.json",
+        "!.next/server/**/*.map",
+        "!**/node_modules/@next/swc*/**/*",
+        "!node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*",
+        "!node_modules/next/dist/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/next-server/server/lib/squoosh/**/*.wasm",
+        "!node_modules/next/dist/compiled/webpack/bundle4.js",
+        "!node_modules/next/dist/compiled/webpack/bundle5.js",
+        "node_modules/styled-jsx/style.js"
+      ]
+      external_node_modules = []
+      node_bundler = "nft"
+
+    [context.main.build]
+
+      [context.main.build.environment]
+      NEXT_PRIVATE_TARGET = "server"
