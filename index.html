@@ -171,12 +171,12 @@ a{color:inherit;text-decoration:none}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:18px}
 .brand img{width:34px;height:34px;border-radius:50%;object-fit:cover;background:var(--surface)}
 .brand span b{color:var(--blue)}
-.links{display:none;gap:28px;font-size:14px;font-weight:500;color:#26323e}
+.links{display:none;gap:24px;font-size:14px;font-weight:500;color:#26323e}
 .links a:hover{color:var(--blue)}
 .nav-cta{display:flex;gap:8px;align-items:center}
-@media(min-width:960px){.links{display:flex}}
+@media(min-width:1180px){.links{display:flex}}
 .menu-btn{display:inline-flex;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center;cursor:pointer}
-@media(min-width:960px){.menu-btn{display:none}}
+@media(min-width:1180px){.menu-btn{display:none}}
 .mobile-menu{display:none;border-top:1px solid var(--line);background:#fff}
 .mobile-menu.open{display:block}
 .mobile-menu a{display:block;padding:14px 16px;border-bottom:1px solid var(--line);font-weight:500}
@@ -374,6 +374,39 @@ h2 .soft{color:#9aa8b6}
 .resp{margin-top:16px;font-size:14px;color:#9fb2c4}
 .resp .dot{display:inline-block;margin-right:8px;vertical-align:middle}
 
+/* process */
+.steps{list-style:none;display:grid;gap:14px}
+@media(min-width:720px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.steps{grid-template-columns:repeat(5,1fr)}}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative}
+.step-n{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.steps h3{font-size:17px;letter-spacing:-.01em;line-height:1.3;margin-bottom:8px}
+.steps p{color:var(--muted);font-size:14.5px}
+
+/* pricing */
+.price-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.prices{width:100%;border-collapse:collapse;font-size:15px}
+.prices th,.prices td{text-align:left;padding:18px 22px;border-bottom:1px solid var(--line);vertical-align:top}
+.prices thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#8494a4;font-weight:500;background:var(--surface)}
+.prices tbody tr:last-child th,.prices tbody tr:last-child td{border-bottom:0}
+.prices tbody th{font-weight:700;letter-spacing:-.01em;width:26%}
+.prices td{color:var(--muted)}
+.prices .amt{color:var(--blue-deep);font-weight:700;white-space:nowrap}
+.prices td:last-child{white-space:nowrap}
+@media(max-width:759px){
+  .prices thead{display:none}
+  .prices tr{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:18px 20px;border-bottom:1px solid var(--line)}
+  .prices tbody tr:last-child{border-bottom:0}
+  .prices th,.prices td{padding:0;border:0}
+  .prices tbody th{width:auto;grid-column:1;font-size:16px}
+  .prices .amt{grid-column:2;grid-row:1;text-align:right}
+  .prices td:nth-of-type(1){grid-column:1/-1;font-size:14.5px}
+  .prices td:nth-of-type(3){grid-column:1/-1;font-family:var(--mono);font-size:12.5px;color:var(--blue)}
+  .prices td:nth-of-type(3)::before{content:"Timeline: "}
+}
+.price-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;margin-top:20px}
+.price-cta p{color:var(--muted);font-size:15.5px}
+
 /* faq */
 .faq{display:grid;gap:12px;max-width:900px}
 .faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 24px}
@@ -417,6 +450,7 @@ footer a:hover{color:var(--blue)}
     <nav class="links">
       <a href="#services">Services</a>
       <a href="#results">Results</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#work">Work</a>
@@ -430,7 +464,7 @@ footer a:hover{color:var(--blue)}
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Services</a><a href="#results">Results</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="James-Ryan-Pepito-CV.pdf" download>Download CV</a>
+    <a href="#services">Services</a><a href="#results">Results</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="James-Ryan-Pepito-CV.pdf" download>Download CV</a>
   </div>
 </header>
 
@@ -488,6 +522,23 @@ footer a:hover{color:var(--blue)}
         <div class="stat reveal"><strong>20+<em>Clients</em></strong><span>Freelance clients worldwide</span></div>
         <div class="stat reveal"><strong>5<em>Years</em></strong><span>At NaXum, up to VP of Design</span></div>
       </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="eyebrow">Process</div><h2>How a Project Works</h2></div>
+        <p>You work with me directly, from the first call to the handover. Here's what happens on every automation project, GoHighLevel setup or website build.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span class="step-n">1</span><h3>Free 20-minute call</h3><p>We map how the process works today. If a call doesn't suit your time zone, send a short screen recording instead.</p></li>
+        <li class="reveal"><span class="step-n">2</span><h3>Written plan and fixed quote</h3><p>Within 1–2 business days you get the tools to connect, what the workflow will do and the price.</p></li>
+        <li class="reveal"><span class="step-n">3</span><h3>Build and test in your accounts</h3><p>Everything runs in your own n8n, GoHighLevel or WordPress, so you own it. I send progress updates as I go.</p></li>
+        <li class="reveal"><span class="step-n">4</span><h3>Handover walkthrough video</h3><p>A recorded Loom video shows how it runs and how to change it later.</p></li>
+        <li class="reveal"><span class="step-n">5</span><h3>14 days of fixes included</h3><p>If something breaks or needs adjusting after launch, I fix it at no extra cost.</p></li>
+      </ol>
     </div>
   </section>
 
@@ -634,6 +685,29 @@ footer a:hover{color:var(--blue)}
     </div>
   </section>
 
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><div class="eyebrow">Pricing</div><h2>Pricing</h2></div>
+        <p>Every project starts with a fixed quote, so you know the n8n automation cost or GoHighLevel setup cost before any work begins. Rates from $10/hour.</p>
+      </div>
+      <div class="price-wrap reveal">
+        <table class="prices">
+          <thead><tr><th scope="col">Project type</th><th scope="col">Typical scope</th><th scope="col">Starting price</th><th scope="col">Timeline</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Simple n8n / Make / Zapier workflow</th><td>2–4 apps, one trigger, no AI steps (e.g. form → CRM → email)</td><td class="amt">from $100</td><td>2–5 days</td></tr>
+            <tr><th scope="row">AI automation workflow</th><td>Lead enrichment, AI-personalized messages, AI agent steps, error handling</td><td class="amt">from $250</td><td>1–2 weeks</td></tr>
+            <tr><th scope="row">GoHighLevel account setup</th><td>Pipelines, calendar, 1 funnel or quiz, 3–5 follow-up workflows</td><td class="amt">from $300</td><td>1–2 weeks</td></tr>
+            <tr><th scope="row">WordPress business site</th><td>Up to 5 pages in Elementor or Divi, mobile-ready, basic SEO, contact form</td><td class="amt">from $400</td><td>2–3 weeks</td></tr>
+            <tr><th scope="row">Monthly automation support</th><td>Fixes, updates and small new workflows (20 hours/month)</td><td class="amt">from $200/month</td><td>Ongoing</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price-cta reveal"><p>Not sure which fits? Describe your process and I'll suggest the simplest option.</p><a class="btn btn-primary" href="#contact">Get a fixed quote for your workflow <span class="ic">↗</span></a></div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills">
     <div class="wrap">
@@ -690,7 +764,7 @@ footer a:hover{color:var(--blue)}
       </div>
       <div class="faq">
         <details class="reveal" open><summary><h3>Do you work with US and UK clients from the Philippines?</h3></summary><p>Yes. I work remotely from Cebu with clients abroad on a part-time or project basis, and past clients include businesses in the US, Canada, Spain, Italy and the Philippines. I communicate in English, usually reply within a day, and schedule calls in your time zone.</p></details>
-        <details class="reveal"><summary><h3>How much does an n8n or GoHighLevel automation cost?</h3></summary><p>I charge from $10 per hour. The total depends on how many apps the workflow connects, how much data it handles and whether it needs AI steps such as lead enrichment or personalized messages. After a short call I send a fixed quote or an hour estimate before any work starts.</p></details>
+        <details class="reveal"><summary><h3>How much does an n8n or GoHighLevel automation cost?</h3></summary><p>I charge from $10 per hour. The total depends on how many apps the workflow connects, how much data it handles and whether it needs AI steps such as lead enrichment or personalized messages. After a short call I send a fixed quote before any work starts. Typical starting prices are in the <a href="#pricing">pricing table</a>.</p></details>
         <details class="reveal"><summary><h3>n8n, Make or Zapier: which should my business use?</h3></summary><p>Zapier is the easiest to start with and has the most app connections, but costs climb as task volume grows. Make handles multi-step scenarios visually and is cheaper at volume. n8n is the most flexible: it supports code and AI agents and can be self-hosted, so it suits high-volume or AI-heavy workflows. I recommend one after looking at your process.</p></details>
         <details class="reveal"><summary><h3>Can you fix or take over an existing GoHighLevel account?</h3></summary><p>Yes. I can review an existing GoHighLevel account, fix broken workflows, pipelines and funnels, and connect it to the rest of your tools. For Cooke Media Ltd, for example, I built n8n automations that move leads and pipeline data from GoHighLevel into monday.com.</p></details>
         <details class="reveal"><summary><h3>Do you host n8n, or does it run in my account?</h3></summary><p>Workflows run in your own n8n account, either n8n Cloud or a self-hosted server, so you own the workflows, credentials and data. If you don't have an account yet, I can help you set one up and build everything inside it.</p></details>
