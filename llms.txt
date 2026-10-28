@@ -1,0 +1,14 @@
+# James Ryan Pepito
+> AI automation specialist (n8n, Make, Zapier, GoHighLevel, Claude Code) and WordPress / eCommerce developer based in Cebu, Philippines. 9+ years, 150+ projects. Also does SEO, GEO and AEO.
+
+## Pages
+- [Portfolio](https://jamesryanpepito-portfolio.netlify.app/): Services, experience, live projects, video demos, recommendations, FAQ
+- [CV (PDF)](https://jamesryanpepito-portfolio.netlify.app/James-Ryan-Pepito-CV.pdf): Full résumé
+- [YouTube demos](https://www.youtube.com/@kuyajames16/videos): n8n, GoHighLevel and AI workflow builds
+
+## Key facts
+- VP of Design at NaXum (2019-2024); built the Brandout platform, CRM and React Native mobile app
+- Built an n8n outreach automation that processed 6,000+ leads for Cooke Media Ltd (2024)
+- Current part-time roles: GHL Specialist & WordPress Developer at Splash Fiberglass Pool Company; Web Developer at Serenity OS
+- Page builders: Elementor, Divi, Beaver Builder, WPBakery; stores: WooCommerce, Shopify, OpenCart
+- Rates from $10/hour; contact pepitojamesryan001@gmail.com or WhatsApp +63 977 393 5561
