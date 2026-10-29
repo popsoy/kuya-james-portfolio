@@ -13,6 +13,7 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/james-avatar.webp">
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"/services/*"},"eagerness":"moderate"}]}</script>
 <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
@@ -402,6 +403,8 @@ h2 .soft{color:#9aa8b6}
 footer{padding:28px 0 92px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 footer a:hover{color:var(--blue)}
+/* Netlify adds a badge iframe that covers hero text on phones */
+@media(max-width:767px){#nl-badge-frame{display:none!important}}
 .to-top{position:fixed;right:16px;bottom:16px;z-index:60;width:48px;height:48px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 26px -10px rgba(43,106,150,.9);display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s,background .15s}
 .to-top.show{opacity:1;transform:none;pointer-events:auto;z-index:999999999999 !important}
 .to-top:hover{background:#245b81}

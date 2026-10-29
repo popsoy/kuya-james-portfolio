@@ -62,6 +62,17 @@
   <url>
     <loc>https://jamesryanpepito-portfolio.netlify.app/services/zapier-make-automation/</loc>
     <lastmod>2026-10-29</lastmod>
+    <image:image>
+      <image:loc>https://jamesryanpepito-portfolio.netlify.app/img/yt-vipOIsAyS9Y.webp</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jamesryanpepito-portfolio.netlify.app/img/yt-vipOIsAyS9Y.webp</video:thumbnail_loc>
+      <video:title>Automated Direct Mail for GHL: Zapier + SendJim Workflow Setup</video:title>
+      <video:description>Zapier workflow that sends a SendJim neighbor mailing automatically when a GoHighLevel (LeadConnector) deal moves to Won.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/vipOIsAyS9Y</video:player_loc>
+      <video:duration>97</video:duration>
+      <video:publication_date>2026-10-29T07:44:30-07:00</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://jamesryanpepito-portfolio.netlify.app/James-Ryan-Pepito-CV.pdf</loc>
