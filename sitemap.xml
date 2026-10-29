@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://jamesryanpepito-portfolio.netlify.app/</loc>
     <lastmod>2026-10-29</lastmod>
+    <image:image>
+      <image:loc>https://jamesryanpepito-portfolio.netlify.app/img/james-about.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://jamesryanpepito-portfolio.netlify.app/img/n8n-sheets-demo.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://jamesryanpepito-portfolio.netlify.app/img/forms-docs-slack-demo.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://jamesryanpepito-portfolio.netlify.app/img/splashpool.webp</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/CGzqkLBE_Fg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>6K Leads with n8n from Google Sheets: Personalized Message Automation</video:title>
+      <video:description>n8n workflow that imports 6,000+ leads from Google Sheets, summarizes each prospect's website with AI and sends personalized messages at scale. Built for Cooke Media Ltd.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/CGzqkLBE_Fg</video:player_loc>
+      <video:duration>306</video:duration>
+      <video:publication_date>2025-09-10T22:18:32-07:00</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-xJpYS4D-70/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Forms to Google Docs and Slack via LLM Workflow (Technical Demo)</video:title>
+      <video:description>n8n workflow that catches form submissions, has an OpenAI agent analyze each lead, logs the enriched data and posts a Slack alert.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/-xJpYS4D-70</video:player_loc>
+      <video:duration>153</video:duration>
+      <video:publication_date>2026-10-28T09:16:33-07:00</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/I_JfPb6Qupc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Pool Selector Lead Automation in GoHighLevel</video:title>
+      <video:description>GoHighLevel workflow for a pool company that automates lead qualification and follow-up after a customer submits the Pool Selector quiz.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/I_JfPb6Qupc</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-13T09:37:41-07:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://jamesryanpepito-portfolio.netlify.app/James-Ryan-Pepito-CV.pdf</loc>
   </url>
 </urlset>
