@@ -427,6 +427,19 @@ footer a:hover{color:var(--blue)}
 .author .muted{color:var(--muted);font-size:14px;margin-top:6px}
 .author a{color:var(--blue);font-weight:600}
 @media(max-width:559px){.author{flex-direction:column;align-items:flex-start}}
+.compare-wrap{overflow-x:auto}
+.prices.compare td:last-child{white-space:normal}
+.prices.compare thead th:first-child{background:var(--surface)}
+@media(max-width:759px){
+  .prices.compare{min-width:600px}
+  .prices.compare thead{display:table-header-group}
+  .prices.compare tr{display:table-row;padding:0;border:0}
+  .prices.compare th,.prices.compare td{display:table-cell;padding:12px 14px;border-bottom:1px solid var(--line);font-size:14px}
+  .prices.compare tbody tr:last-child th,.prices.compare tbody tr:last-child td{border-bottom:0}
+  .prices.compare tbody th{font-size:14px}
+  .prices.compare td:nth-of-type(1),.prices.compare td:nth-of-type(3){font-family:inherit;color:var(--muted);font-size:14px}
+  .prices.compare td:nth-of-type(3)::before{content:none}
+}
 </style>
 </head>
 <body>
@@ -549,6 +562,7 @@ footer a:hover{color:var(--blue)}
         <div class="card reveal"><h3>Make</h3><p>Handles multi-step scenarios visually and is cheaper at volume.</p></div>
         <div class="card reveal"><h3>n8n</h3><p>The most flexible: it supports code and AI agents and can be self-hosted, so it suits high-volume or AI-heavy workflows.</p></div>
       </div>
+      <div class="prose reveal" style="margin-top:20px"><p>Prefer Zapier or Make? See my <a href="/services/zapier-make-automation/">Zapier and Make automation service</a>.</p></div>
     </div>
   </section>
 
@@ -638,7 +652,7 @@ footer a:hover{color:var(--blue)}
 <footer>
   <div class="wrap">
     <span>© <span data-year>2026</span> James Ryan Pepito · Last updated <time datetime="2026-10-29">October 29, 2026</time></span>
-    <span><a href="/services/n8n-automation/">n8n automation</a> · <a href="/services/gohighlevel-automation/">GoHighLevel automation</a></span>
+    <span><a href="/services/n8n-automation/">n8n automation</a> · <a href="/services/zapier-make-automation/">Zapier &amp; Make automation</a> · <a href="/services/gohighlevel-automation/">GoHighLevel automation</a></span>
     <span><a href="https://www.linkedin.com/in/jamesryandiolapepito/" target="_blank" rel="noopener me">LinkedIn</a> · <a href="https://v2.onlinejobs.ph/jobseekers/info/681397" target="_blank" rel="noopener me">OnlineJobs</a> · <a href="https://www.facebook.com/OfficialKuyaJames" target="_blank" rel="noopener me">Facebook</a> · <a href="https://www.youtube.com/@kuyajames16/videos" target="_blank" rel="noopener me">YouTube</a> · <a href="https://github.com/popsoy" target="_blank" rel="noopener me">GitHub</a> · <a href="/James-Ryan-Pepito-CV.pdf" download>Download CV</a></span>
   </div>
 </footer>
