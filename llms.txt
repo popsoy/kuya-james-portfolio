@@ -3,6 +3,7 @@
 
 ## Pages
 - [Portfolio](https://jamesryanpepito-portfolio.netlify.app/): Services, experience, live projects, video demos, recommendations, FAQ
+- [GoHighLevel automation service](https://jamesryanpepito-portfolio.netlify.app/services/gohighlevel-automation/): GHL setup, workflows, funnels, pricing and the Splash Pools case study
 - [CV (PDF)](https://jamesryanpepito-portfolio.netlify.app/James-Ryan-Pepito-CV.pdf): Full résumé
 - [LinkedIn](https://www.linkedin.com/in/jamesryandiolapepito/): Work history and recommendations
 - [OnlineJobs.ph profile](https://v2.onlinejobs.ph/jobseekers/info/681397): Freelance profile
