@@ -243,7 +243,7 @@ h2 .soft{color:#9aa8b6}
 .stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
 .stat strong{display:block;font-size:clamp(30px,3.4vw,40px);letter-spacing:-.03em;line-height:1}
 .stat strong em{font-style:normal;color:var(--blue);font-size:.6em;font-weight:600;margin-left:4px}
-.stat span{color:var(--muted);font-size:14px;margin-top:8px;display:block}
+.stat > span{color:var(--muted);font-size:14px;margin-top:8px;display:block}
 
 /* about */
 .about{display:grid;gap:40px;align-items:center}
@@ -674,7 +674,7 @@ footer a:hover{color:var(--blue)}
   // mobile menu
   // years of experience and copyright year stay current on their own
   (function(){
-    const now=new Date().getFullYear(), yrs=now-2017;
+    const now=new Date().getFullYear(), yrs=now-2017+1;
     const words=['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
     const w=words[yrs]||String(yrs);
     document.querySelectorAll('[data-years]').forEach(e=>e.textContent=yrs);
